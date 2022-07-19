@@ -32,6 +32,9 @@ p{
 	font-weight: 300;
 	text-align: center;
 }
+.nav_back{
+	background-color: rgba(205, 92, 92, 0.8);
+}
 	
 nav ul li{ 
 	display: inline-block;
@@ -96,11 +99,12 @@ body{
  	border-radius: 20px;
  }
 
- .buton_nav{
- 	background-color: rgba(205, 92, 92, 0.8);
-	position: sticky;
-	top: 0;
- }
+.btn-dark {
+    color: darkred;
+    border-color: darkred;
+    background-color: white;
+}
+ 
 
  /*Flex*/
 
@@ -161,7 +165,7 @@ body{
 /*Modelo de Caja*/
 
 .icon_log{
-	width: 10%;
+	width: 75px;
 }
 
 .prod_box{
@@ -223,25 +227,19 @@ body{
 }
 
 .banner_slider{
-	height: 200px;
+	height: 120px;
 	width: auto;
+	position: relative;
 	 background-size: 100%;
 	 animation-name: banneranimete;
-	 animation-duration: 20s;
+	 animation-duration: 23s;
 	 animation-iteration-count: infinite;
 }
 
-/* Solo para entrega 
- .art_prueba--whit{
- 	background-color: whitesmoke;
- 	padding: 50px;
- 	margin: 20px auto;
- 	width: 80%;
- 	height: auto;
- 	border: solid; darkred 5px;
- 	overflow: auto;
- 	color: darkred;
-}*/
+.navbar-light .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 /*Responsive*/
 
@@ -293,6 +291,9 @@ body{
 	flex-direction: row;
 	align-items: center;
 	}
+.icon_log{
+	width: 105px;
+}
 
 }
 /* Selectores de ID*/ 
