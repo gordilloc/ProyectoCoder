@@ -122,8 +122,20 @@ body{
 	align-items: center;
 }
 
+.flex_prod{
+	display: flex;
+	margin: 20px 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between
+	}
 
- .flex_grid{
+.flex_card{
+	width: 75%;
+	padding: 18px;
+	}
+
+.flex_grid{
  	display: flex;
  	background-color: rgba(205, 92, 92, 0.8);
 	position: sticky;
@@ -243,8 +255,21 @@ body{
 
 /*Responsive*/
 
-@media (min-width: 768px){
+@media (min-width: 766px){
 
+	.flex_prod{
+		display: flex;
+		margin: 20px 0;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		
+		}
+
+	.flex_card{
+		width: 50%;
+		padding: 18px;
+		}
 }
 
 @media (min-width: 1024px){
@@ -283,17 +308,31 @@ body{
 	 	display: flex;
 	 	flex-direction: row;
 	 	justify-content: space-evenly;
-	 }
+	 	}
 
-.galeria_flex{
-	margin: 20px 0;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	}
-.icon_log{
-	width: 105px;
-}
+	.galeria_flex{
+		display: flex;
+		margin: 20px 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between
+		}
+
+	.flex_prod{
+		display: flex;
+		margin: 20px 0;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between
+		}
+
+	.flex_card{
+		width: 25%;
+		padding: 18px;
+		}
+	.icon_log{
+		width: 105px;
+		}
 
 }
 /* Selectores de ID*/ 
