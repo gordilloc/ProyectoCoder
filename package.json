@@ -1,0 +1,27 @@
+{
+  "name": "Carlos",
+  "version": "1.0.0",
+  "description": "Proyector Coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordilloc/ProyectoCoder.git"
+  },
+  "keywords": [
+    "es"
+  ],
+  "author": "Carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordilloc/ProyectoCoder/issues"
+  },
+  "homepage": "https://github.com/gordilloc/ProyectoCoder#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

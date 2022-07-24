@@ -1,0 +1,76 @@
+h1,h2,h3{
+	color: $main_color;
+	text-align: $txtCen;
+}
+
+h1 {
+	font-size: $text_lg;
+}
+h2{
+	font-size: $text_md;
+}
+h3{
+	font-size: $text_sm;
+}
+
+p{
+	font-family: $font_main;
+	line-height: $line_h;
+	font-size: 1.0rem;
+	font-weight: 300;
+	text-align: $txtCen;
+}
+
+.nav_back{
+	background-color: $back_color;
+}
+nav ul li{ 
+	display: inline-block;
+	margin-right: 10px;
+	} 
+	nav ul li a{
+		color: $txtbk;
+		text-decoration: none;
+		font-family: $font_main;
+		line-height: $line_h;
+		font-size: $text_xs;
+		font-weight: $textregular;
+		background: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+
+		}
+		nav ul li a:hover{
+			color: $txtbk;
+			font-weight: $textbold;
+			background-size: 100% 2px;
+			}
+			
+.transform_red:hover{
+	transform: translatey(-15px);
+	transition: transform 1s;
+}
+
+@keyframes banneranimete{
+	0%{background-image: url(../banner/banner_final1.jpg)}
+	25%{background-image: url(../banner/banner_final2.jpg)}
+	50%{background-image: url(../banner/banner_final3.jpg)}
+	75%{background-image: url(../banner/banner_final4.jpg)}
+	100%{background-image: url(../banner/banner_final5.jpg)}
+}
+
+.banner_slider{
+	height: 120px;
+	width: auto;
+	position: relative;
+	 background-size: 100%;
+	 animation-name: banneranimete;
+	 animation-duration: 23s;
+	 animation-iteration-count: infinite;
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

@@ -1,0 +1,95 @@
+.flex_in{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+
+ }
+
+.galeria_flex{
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex_prod{
+	display: flex;
+	margin: 20px 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between
+	}
+
+.flex_card{
+	width: 75%;
+	padding: 18px;
+	}
+
+.flex_grid{
+ 	display: flex;
+ 	background-color: rgba(205, 92, 92, 0.8);
+	position: sticky;
+ }
+
+.grid_gal{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 250px;
+	padding: 20px 0;
+	grid-gap: 10px;
+	width: 50%;
+	margin: 0;
+
+	}
+
+.gallery_item:nth-child(2){
+		grid-row-start: span 2;
+		}
+
+.gallery_item:nth-child(4){
+	grid-column-start: span 2;
+}
+
+.gallery_item:nth-child(5){
+	grid-row-start: span 2;
+}
+
+.gallery_item:nth-child(7){
+		grid-row-start: span 2;
+		}
+
+.gallery_item:nth-child(9){
+	grid-column-start: span 2;
+}
+
+/*Modelo de Caja*/
+
+.icon_log{
+	width: 75px;
+}
+
+.prod_box{
+	width: 80%;
+	height: auto;
+	padding: 5px 10px;
+	margin: 10px auto;
+	overflow-y: auto;
+}
+
+.prod_box_grid{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	object-fit: cover;
+	padding: 5px 10px;
+	margin: 10px auto;
+	overflow-y: auto;
+}
+
+.encabezado_img--fluid{
+	width: 100%;
+}
+
+.img_produc{
+	width: 50%;
+}

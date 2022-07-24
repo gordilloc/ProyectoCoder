@@ -1,0 +1,13 @@
+.pie_icon_--sm{
+	width: 40px;
+	cursor: pointer;
+}
+.pie{
+	text-align: $txtCen;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}

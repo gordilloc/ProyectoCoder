@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&family=Source+Sans+Pro:ital,wght@0,600;1,200&display=swap');
+$font_main:'Source Sans Pro', sans-serif;
+$secondary_font: 'Noto Sans', sans-serif;
+
+$text_lg:2.5rem;
+$text_md:2,2rem;
+$text_sm:1.8rem;
+$text_xs:1.3rem;
+
+$textbold:600;
+$textregular:400;
+$textlight:300;
+
+$txtCen:center;
+$txtRig:right;
+$txtlef:left;
+$textIta: italic;
+
+$line_h:1.8rem;
+
+*{
+	font-family: $font_main;
+	padding: 0;
+	margin: 0;
+}
+
+.text_color{
+ 	color: #404040;
+ }
+
+ .text_center{
+ 	text-align: $txtCen;
+ }
+
+ .text_right{
+ 	text-align: $txtRig;
+ }
+
+ .text_left{
+ 	text-align: $txtlef;
+ }
+
+ .text_italic{
+ 	font-style: $textIta;
+ }
+
+ .bg_pink{
+ 	background-color: $back_color;
+ }
+
+ .bg_light{
+ 	background-color: $backColor-W;
+ }
+ 
+ .art_galeria{
+ 	border-radius: 20px;
+ }
+
+.btn-dark {
+    color: $main_color;
+    border-color: $main_color;
+    background-color: white;
+}
