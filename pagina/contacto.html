@@ -88,35 +88,63 @@
 
 	 	<section class="prod_box bg_light">
 			<form action="contacto.php">
-				<label for="name">Nombre y apellido</label>
-				<input type="text" id="name" placeholder="Ingrese su nombre y apellido">
+
+				<div class="mb-3">
+				  <label for="name" class="form-label">Nombre y apellido
+				  </label>
+				  <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre y apellido">
+				</div>
+
 				<br>
-				<label for="correo">Email</label>
-				<input type="email" id="correo" placeholder="Ej:mail@contacto.com">
+				<div class="mb-3">
+				  <label for="Correo" class="form-label">Email
+				  </label>
+				  <input type="email" class="form-control" id="correo" placeholder="mail@contacto.com">
+				</div>
+
 				<fieldset>
-					<legend>Encargo o Presupeusto</legend>
-					<label for="Postre">Postres</label>
-					<input type="checkbox" id="postres" value="sol postre">
-					<br>
-					<label for="Tortas">Tortas</label>
-					<input type="checkbox" id="Tortas">
-					<br>
-					<label for="Budin">Budin</label>
-					<input type="checkbox" id="Budin">
-					<br>
-					<label for="Gallestas">Galleta</label>
-					<input type="checkbox" id="Galletas">
-					<br>
-					<label for="Tortas Tematicas">Tortas Temáticas</label>
-					<input type="checkbox" id="Tortas">
+					<legend class="form-label">Encargo o Presupeusto</legend>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="sol postre" id="postres">
+					  <label class="form-check-label" for="selec-postres">
+					    Postres
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="Tortas" checked>
+					  <label class="form-check-label" for="selec-Tortas">
+					    Tortas
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="budin" id="budin">
+					  <label class="form-check-label" for="selec-budin">
+					    budin
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="Galletitas" id="Galletas" checked>
+					  <label class="form-check-label" for="selec-galletas">
+					    Galletas
+					  </label>
+					</div>
 				</fieldset>
+
 				<fieldset>
 					<legend>Informacion del encargo o presupeusto</legend>
-					<label for="casa">Envío a domicilio</label>
-					<input type="radio" id="casa" value="direccion" name="envio">
+
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="envio" id="Casa" value="direccion">
+					  <label class="form-check-label" for="Casa">
+					   Envío a domicilio
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="envio" id="Acuerda entrega" checked>
+					  <label class="form-check-label" for="Acuerda entrega"> Acuerda entrega
+					  </label>
+					</div>
 					<br>
-					<label for="coordinar">Acuerda entrega</label>
-					<input type="radio" id="Coordinar" name="envio">
 					<label for="Departamento">Montevideo</label>
 					<select name="" id="">
 						<option value="MVD">Montevideo</option>
@@ -124,17 +152,24 @@
 						<option value="interior">Encomienda</option>
 					</select>
 				</fieldset>
-				<label for="comentario">Dejes su mensaje</label>
-				<br>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-				<br>
-				<input type="reset" value="Cancelar">
-				<input type="submit" value="Enviar">
-			</form><!-- ends form -->
-			
+				<div class="mb-3">
+				  <label for="comentario" class="form-label">Dejes su mensaje
+				  </label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+				  </textarea>
+
+				  <input type="reset" class="btn-check" id="btn-check-2" checked autocomplete="off">
+					<label class="btn btn-primary" for="btn-check-2">Cancelar</label>
+
+					<input type="submit" class="btn-check" id="btn-check-2" checked autocomplete="off">
+					<label class="btn btn-primary" for="btn-check-2">Enviar</label>
+				</div>
+			</form>
+
 		</section>
 
 	 </main>
+
 
 	<!-- ends main -->
 
