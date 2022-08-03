@@ -252,6 +252,11 @@ nav ul li a:hover {
   border: none;
 }
 
+.form-check-input:checked {
+  background-color: #994545;
+  border-color: #994545;
+}
+
 .pie_icon_--sm {
   width: 40px;
   cursor: pointer;

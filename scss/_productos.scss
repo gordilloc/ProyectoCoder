@@ -102,3 +102,8 @@
 	color: $txtbk;
 	border:none;
 }
+
+.form-check-input:checked {
+    background-color: map-get($map:$paleta,$key:'siete');
+    border-color: map-get($map:$paleta,$key:'siete');
+}
