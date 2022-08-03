@@ -62,7 +62,6 @@
 	grid-column-start: span 2;
 }
 
-/*Modelo de Caja*/
 
 .icon_log{
 	width: 75px;
@@ -94,3 +93,24 @@
 .img_produc{
 	width: 50%;
 }
+
+// Extends
+
+.btn_contact{
+	color: $txtwh;
+    background-color: $bk_colorsolid;
+    border:none;
+    margin: 0.4rem;
+    &:hover{
+    	color: $txtbk;
+    	cursor: pointer;
+    }
+}
+
+.btn_contactop{
+	@extend .btn_contact;
+	background-color:grey; 
+}
+
+//Mixins
+

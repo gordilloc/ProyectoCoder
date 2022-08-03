@@ -195,7 +195,6 @@ nav ul li a:hover {
   grid-column-start: span 2;
 }
 
-/*Modelo de Caja*/
 .icon_log {
   width: 75px;
 }
@@ -224,6 +223,21 @@ nav ul li a:hover {
 
 .img_produc {
   width: 50%;
+}
+
+.btn_contact, .btn_contactop {
+  color: white;
+  background-color: rgb(205, 92, 92);
+  border: none;
+  margin: 0.4rem;
+}
+.btn_contact:hover, .btn_contactop:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.btn_contactop {
+  background-color: grey;
 }
 
 .pie_icon_--sm {
