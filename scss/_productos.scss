@@ -13,11 +13,8 @@
 }
 
 .flex_prod{
-	display: flex;
+	@include d_flex(center, space-between, column);
 	margin: 20px 0;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between
 	}
 
 .flex_card{
@@ -94,23 +91,14 @@
 	width: 50%;
 }
 
-// Extends
-
-.btn_contact{
-	color: $txtwh;
-    background-color: $bk_colorsolid;
-    border:none;
-    margin: 0.4rem;
-    &:hover{
-    	color: $txtbk;
-    	cursor: pointer;
-    }
+.bk_nos{
+	background-color: map-get($map:$paleta,$key:'dos');
+	color: $txtbk;
+	border:none;
 }
 
-.btn_contactop{
-	@extend .btn_contact;
-	background-color:grey; 
+.accordion-button:not(.collapsed) {
+    background-color: map-get($map:$paleta,$key:'siete');
+	color: $txtbk;
+	border:none;
 }
-
-//Mixins
-

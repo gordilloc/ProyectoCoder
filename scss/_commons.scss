@@ -1,0 +1,37 @@
+// Extends
+
+.btn_contact{
+	color: $txtwh;
+    background-color: $bk_colorsolid;
+    border:none;
+    margin: 0.4rem;
+    &:hover{
+    	color: $txtbk;
+    	cursor: pointer;
+    }
+}
+
+.btn_contactop{
+	@extend .btn_contact;
+	background-color:grey; 
+}
+//Maxin 
+
+@mixin d_flex($alin, $justifi, $dire){
+    display: flex;
+    align-items: $alin;
+    justify-content: $justifi;
+    flex-direction: $dire;
+}
+
+//
+$paleta:(
+    'uno': darkred,
+    'dos': rgba(205, 92, 92, 0.8),
+    'tres': rgba(205, 92, 92, 1),
+    'cuatro': rgba(91, 205, 205, 1),
+    'cinco': #5B9DCD,
+    'seis': rgb(250, 128, 114),
+    'siete': #994545,
+    'ocho': #rgb(78,24,24)
+    );
