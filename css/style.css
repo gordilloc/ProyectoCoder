@@ -161,6 +161,13 @@ nav ul li a:hover {
   align-items: center;
 }
 
+.flex_promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .flex_prod {
   display: flex;
   align-items: center;

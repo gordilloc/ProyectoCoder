@@ -12,6 +12,11 @@
 	align-items: center;
 }
 
+.flex_promo{
+	@include d_flex(center, space-between, column);
+}
+
+
 .flex_prod{
 	@include d_flex(center, space-between, column);
 	margin: 20px 0;
