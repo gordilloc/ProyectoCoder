@@ -14,6 +14,9 @@
 		padding: 18px;
 		}
 
+	.prod_box_grid{
+	width: 100%;
+	}
 	.grid_gal{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -47,7 +50,10 @@
 }
 
 @media (min-width: 1024px){
-	
+
+	.prod_box_grid{
+	width: 100%;
+	}
 	.grid_gal{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
